@@ -1,6 +1,6 @@
-//your JS code here. If required.
-const colorSelect = document.getelementById("colorSelect");
-const removeButton = document.quertSelector("input[type='button']");
+document.addEventListener("DOMContentLoaded", () =>{
+	const colorSelect = document.getelementById("colorSelect");
+const removeButton = document.quertSelector("input[type='button'][value = 'Select and Remove']");
 
 removeButton.addEventListener("click", ()=>{
 	const selectedIndex = colorSelect.selectedIndex;
@@ -8,4 +8,6 @@ removeButton.addEventListener("click", ()=>{
 	if(selectedIndex !== -1){
 		colorSelect.remove(selectedIndex);
 	}
-})
+});
+
+});
